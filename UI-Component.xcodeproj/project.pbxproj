@@ -14,6 +14,10 @@
 		C1D8A20F27EAF97C00CCCED7 /* UI_ComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D8A20E27EAF97C00CCCED7 /* UI_ComponentTests.swift */; };
 		C1D8A21927EAF97C00CCCED7 /* UI_ComponentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D8A21827EAF97C00CCCED7 /* UI_ComponentUITests.swift */; };
 		C1D8A21B27EAF97C00CCCED7 /* UI_ComponentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D8A21A27EAF97C00CCCED7 /* UI_ComponentUITestsLaunchTests.swift */; };
+		C1D8A22927EB015E00CCCED7 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D8A22827EB015E00CCCED7 /* ChatsView.swift */; };
+		C1D8A22B27EB016B00CCCED7 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D8A22A27EB016B00CCCED7 /* ContactsView.swift */; };
+		C1D8A22D27EB017800CCCED7 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D8A22C27EB017800CCCED7 /* DiscoverView.swift */; };
+		C1D8A22F27EB018600CCCED7 /* MyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D8A22E27EB018600CCCED7 /* MyInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		C1D8A21427EAF97C00CCCED7 /* UI-ComponentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI-ComponentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D8A21827EAF97C00CCCED7 /* UI_ComponentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI_ComponentUITests.swift; sourceTree = "<group>"; };
 		C1D8A21A27EAF97C00CCCED7 /* UI_ComponentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI_ComponentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C1D8A22827EB015E00CCCED7 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
+		C1D8A22A27EB016B00CCCED7 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		C1D8A22C27EB017800CCCED7 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		C1D8A22E27EB018600CCCED7 /* MyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,7 @@
 		C1D8A1FC27EAF97A00CCCED7 /* UI-Component */ = {
 			isa = PBXGroup;
 			children = (
+				C1D8A22727EB011A00CCCED7 /* Views */,
 				C1D8A1FD27EAF97A00CCCED7 /* UI_ComponentApp.swift */,
 				C1D8A1FF27EAF97A00CCCED7 /* ContentView.swift */,
 				C1D8A20127EAF97C00CCCED7 /* Assets.xcassets */,
@@ -125,6 +134,17 @@
 				C1D8A21A27EAF97C00CCCED7 /* UI_ComponentUITestsLaunchTests.swift */,
 			);
 			path = "UI-ComponentUITests";
+			sourceTree = "<group>";
+		};
+		C1D8A22727EB011A00CCCED7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C1D8A22827EB015E00CCCED7 /* ChatsView.swift */,
+				C1D8A22A27EB016B00CCCED7 /* ContactsView.swift */,
+				C1D8A22C27EB017800CCCED7 /* DiscoverView.swift */,
+				C1D8A22E27EB018600CCCED7 /* MyInfoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1D8A22927EB015E00CCCED7 /* ChatsView.swift in Sources */,
 				C1D8A20027EAF97A00CCCED7 /* ContentView.swift in Sources */,
+				C1D8A22D27EB017800CCCED7 /* DiscoverView.swift in Sources */,
 				C1D8A1FE27EAF97A00CCCED7 /* UI_ComponentApp.swift in Sources */,
+				C1D8A22F27EB018600CCCED7 /* MyInfoView.swift in Sources */,
+				C1D8A22B27EB016B00CCCED7 /* ContactsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
