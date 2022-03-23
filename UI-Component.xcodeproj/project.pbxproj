@@ -18,6 +18,8 @@
 		C1D8A22B27EB016B00CCCED7 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D8A22A27EB016B00CCCED7 /* ContactsView.swift */; };
 		C1D8A22D27EB017800CCCED7 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D8A22C27EB017800CCCED7 /* DiscoverView.swift */; };
 		C1D8A22F27EB018600CCCED7 /* MyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D8A22E27EB018600CCCED7 /* MyInfoView.swift */; };
+		C1D8A23127EB1D3500CCCED7 /* DiscoverItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D8A23027EB1D3500CCCED7 /* DiscoverItemView.swift */; };
+		C1D8A23327EB1F3100CCCED7 /* MomentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D8A23227EB1F3100CCCED7 /* MomentsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		C1D8A22A27EB016B00CCCED7 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		C1D8A22C27EB017800CCCED7 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		C1D8A22E27EB018600CCCED7 /* MyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoView.swift; sourceTree = "<group>"; };
+		C1D8A23027EB1D3500CCCED7 /* DiscoverItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverItemView.swift; sourceTree = "<group>"; };
+		C1D8A23227EB1F3100CCCED7 /* MomentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 				C1D8A22A27EB016B00CCCED7 /* ContactsView.swift */,
 				C1D8A22C27EB017800CCCED7 /* DiscoverView.swift */,
 				C1D8A22E27EB018600CCCED7 /* MyInfoView.swift */,
+				C1D8A23027EB1D3500CCCED7 /* DiscoverItemView.swift */,
+				C1D8A23227EB1F3100CCCED7 /* MomentsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,7 +285,9 @@
 			files = (
 				C1D8A22927EB015E00CCCED7 /* ChatsView.swift in Sources */,
 				C1D8A20027EAF97A00CCCED7 /* ContentView.swift in Sources */,
+				C1D8A23327EB1F3100CCCED7 /* MomentsView.swift in Sources */,
 				C1D8A22D27EB017800CCCED7 /* DiscoverView.swift in Sources */,
+				C1D8A23127EB1D3500CCCED7 /* DiscoverItemView.swift in Sources */,
 				C1D8A1FE27EAF97A00CCCED7 /* UI_ComponentApp.swift in Sources */,
 				C1D8A22F27EB018600CCCED7 /* MyInfoView.swift in Sources */,
 				C1D8A22B27EB016B00CCCED7 /* ContactsView.swift in Sources */,

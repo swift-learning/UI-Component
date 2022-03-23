@@ -8,34 +8,21 @@
 import SwiftUI
 
 struct DiscoverView: View {
-    init() {
-        UITableView.appearance().backgroundColor = .clear
-    }
     var body: some View {
         VStack {
-            Text("发现")
-            List {
-                HStack() {
-                    Image(systemName: "circle.circle.fill")
-                        .frame(width: 20, height: 20)
-                    Text("朋友圈")
-                        .offset(x: 6)
+            NavigationView {
+                List {
+                    NavigationLink(destination: MomentsView()) {
+                        DiscoverItemView(iconName: "circle.circle.fill", itemName: "朋友圈")
+                    }
+                    DiscoverItemView(iconName: "gamecontroller.fill", itemName: "游戏")
+                    DiscoverItemView(iconName: "circle.dashed", itemName: "小程序")
                 }
-                HStack() {
-                    Image(systemName: "gamecontroller.fill")
-                        .frame(width: 20, height: 20)
-                    Text("游戏")
-                        .offset(x: 6)
-                }
-                HStack() {
-                    Image(systemName: "circle.dashed")
-                        .frame(width: 20, height: 20)
-                    Text("小程序")
-                        .offset(x: 6)
-                }
+                .navigationTitle("发现")
+                .navigationBarTitleDisplayMode(.inline)
             }
+            .background(Color(.systemGray6))
         }
-        .background(Color(.systemGray6))
     }
 }
 
