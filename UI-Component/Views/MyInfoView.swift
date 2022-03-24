@@ -12,9 +12,3 @@ struct MyInfoView: View {
         Text("我页面")
     }
 }
-
-struct MyInfoView_Previews: PreviewProvider {
-    static var previews: some View {
-        MyInfoView()
-    }
-}

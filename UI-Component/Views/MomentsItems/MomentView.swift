@@ -57,11 +57,3 @@ struct MomentView: View {
         }
     }
 }
-
-struct MomentView_Previews: PreviewProvider {
-    static var previews: some View {
-//        let moment1 = Moment(name: "桃子猪", avatar: "avatar1", content: "不是我矫情，这年呐～就是得和家人一起过才有味道。")
-        let moment4 = Moment(name: "芒果🦒", avatar: "avatar2", content: "草莓兔最近移情别恋，都好久没跟我玩了。哼～生气", pics: ["pic1"], likes: ["草莓🐰"])
-        MomentView(moment: moment4)
-    }
-}

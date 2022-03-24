@@ -12,9 +12,3 @@ struct ChatsView: View {
         Text("微信页面")
     }
 }
-
-struct ChatsView_Previews: PreviewProvider {
-    static var previews: some View {
-        ChatsView()
-    }
-}

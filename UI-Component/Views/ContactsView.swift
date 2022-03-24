@@ -12,9 +12,3 @@ struct ContactsView: View {
         Text("通讯录页面")
     }
 }
-
-struct ContactsView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContactsView()
-    }
-}
