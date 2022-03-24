@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct UserNameAvatar: View {
+struct UserNameAvatarView: View {
     let name: String
     let avatar: String
     
