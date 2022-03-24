@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct MomentPicsView: View {
+    let pics: [String]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct MomentPicsView_Previews: PreviewProvider {
-    static var previews: some View {
-        MomentPicsView()
+        if (pics.count == 1) {
+            Image(pics[0])
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: UIScreen.main.nativeBounds.width * 0.2)
+        }
     }
 }
