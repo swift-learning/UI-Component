@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Moment {
+struct Moment: Hashable {
     let name: String
     let avatar: String
     var content: String?
@@ -51,6 +51,8 @@ struct MomentView: View {
                     .frame(width: UIScreen.main.nativeBounds.width * 0.25)
                     .background(.gray)
                 }
+                Spacer()
+                    .frame(height: 16)
             }
         }
     }
