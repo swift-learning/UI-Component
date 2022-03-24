@@ -11,6 +11,10 @@ struct MomentsView: View {
     var body: some View {
         ScrollView() {
             BackgroundImgView(picName: "pic-background")
+            UserNameAvatar(name: "桃子猪", avatar: "avatar1")
+                .padding(.trailing)
+                .offset(y: -70)
+                
         }
         .navigationBarTitle("朋友圈", displayMode: .inline)
     }
