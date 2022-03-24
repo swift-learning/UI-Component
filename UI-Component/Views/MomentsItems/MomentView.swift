@@ -48,12 +48,13 @@ struct MomentView: View {
                         }
                         Spacer()
                     }
-                    .frame(width: UIScreen.main.nativeBounds.width * 0.25)
                     .background(.gray)
                 }
                 Spacer()
                     .frame(height: 16)
             }
+            Spacer()
         }
+        .padding()
     }
 }
