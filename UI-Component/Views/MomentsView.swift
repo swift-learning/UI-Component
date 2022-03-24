@@ -9,7 +9,13 @@ import SwiftUI
 
 struct MomentsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView() {
+            Image("pic-background")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(height: 300)
+        }
+        .navigationBarTitle("朋友圈", displayMode: .inline)
     }
 }
 
