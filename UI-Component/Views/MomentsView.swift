@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct MomentsView: View {
+    let user: User
     
     var body: some View {
         ScrollView() {
-            BackgroundImgView(picName: "pic-background")
-            UserNameAvatarView(name: "桃子猪", avatar: "avatar1")
+            BackgroundImgView(picName: user.backgroundPicName)
+            UserNameAvatarView(name: user.name, avatar: user.avatar)
                 .padding(.trailing)
                 .offset(y: -70)
-            ForEach(moments, id: \.self) { moment in
+            ForEach(user.moments, id: \.self) { moment in
                 MomentView(moment: moment)
             }
         }
@@ -25,6 +26,6 @@ struct MomentsView: View {
 
 struct MomentsView_Previews: PreviewProvider {
     static var previews: some View {
-        MomentsView()
+        MomentsView(user: defaultUser)
     }
 }

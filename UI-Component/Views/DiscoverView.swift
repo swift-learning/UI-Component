@@ -12,7 +12,7 @@ struct DiscoverView: View {
         VStack {
             NavigationView {
                 List {
-                    NavigationLink(destination: MomentsView()) {
+                    NavigationLink(destination: MomentsView(user: defaultUser)) {
                         DiscoverItemView(iconName: "circle.circle.fill", itemName: "朋友圈")
                     }
                     DiscoverItemView(iconName: "gamecontroller.fill", itemName: "游戏")
