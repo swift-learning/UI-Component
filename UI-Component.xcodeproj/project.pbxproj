@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1555ECC27EC113C00F0744F /* BackgroundImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1555ECB27EC113C00F0744F /* BackgroundImgView.swift */; };
 		C1D8A1FE27EAF97A00CCCED7 /* UI_ComponentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D8A1FD27EAF97A00CCCED7 /* UI_ComponentApp.swift */; };
 		C1D8A20027EAF97A00CCCED7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D8A1FF27EAF97A00CCCED7 /* ContentView.swift */; };
 		C1D8A20227EAF97C00CCCED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D8A20127EAF97C00CCCED7 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C1555ECB27EC113C00F0744F /* BackgroundImgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImgView.swift; sourceTree = "<group>"; };
 		C1D8A1FA27EAF97A00CCCED7 /* UI-Component.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI-Component.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D8A1FD27EAF97A00CCCED7 /* UI_ComponentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI_ComponentApp.swift; sourceTree = "<group>"; };
 		C1D8A1FF27EAF97A00CCCED7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C1555ECA27EC112300F0744F /* MomentsItems */ = {
+			isa = PBXGroup;
+			children = (
+				C1555ECB27EC113C00F0744F /* BackgroundImgView.swift */,
+			);
+			path = MomentsItems;
+			sourceTree = "<group>";
+		};
 		C1D8A1F127EAF97A00CCCED7 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +153,7 @@
 		C1D8A22727EB011A00CCCED7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C1555ECA27EC112300F0744F /* MomentsItems */,
 				C1D8A22827EB015E00CCCED7 /* ChatsView.swift */,
 				C1D8A22A27EB016B00CCCED7 /* ContactsView.swift */,
 				C1D8A22C27EB017800CCCED7 /* DiscoverView.swift */,
@@ -289,6 +300,7 @@
 				C1D8A22D27EB017800CCCED7 /* DiscoverView.swift in Sources */,
 				C1D8A23127EB1D3500CCCED7 /* DiscoverItemView.swift in Sources */,
 				C1D8A1FE27EAF97A00CCCED7 /* UI_ComponentApp.swift in Sources */,
+				C1555ECC27EC113C00F0744F /* BackgroundImgView.swift in Sources */,
 				C1D8A22F27EB018600CCCED7 /* MyInfoView.swift in Sources */,
 				C1D8A22B27EB016B00CCCED7 /* ContactsView.swift in Sources */,
 			);

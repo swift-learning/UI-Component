@@ -10,10 +10,7 @@ import SwiftUI
 struct MomentsView: View {
     var body: some View {
         ScrollView() {
-            Image("pic-background")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(height: 300)
+            BackgroundImgView(picName: "pic-background")
         }
         .navigationBarTitle("朋友圈", displayMode: .inline)
     }
