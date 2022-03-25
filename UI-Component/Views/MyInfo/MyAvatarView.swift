@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MyAvatarView: View {
     @EnvironmentObject var user: User
+    @State var showConfirmation = false
     
     var body: some View {
         Image(user.avatar)
@@ -18,9 +19,17 @@ struct MyAvatarView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar() {
                 Button {
-                    user.changeAvatar()
+                    showConfirmation = true
                 } label: {
                     Image(systemName: "ellipsis")
+                }
+                .confirmationDialog("Change avatar?", isPresented: $showConfirmation) {
+                    Button("修改头像") {
+                        user.changeAvatar()
+                    }
+                    Button("取消", role: .cancel) {}
+                } message: {
+                    Text("更多")
                 }
             }
     }
