@@ -93,6 +93,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C12B668227EDABC000EF36F9 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				C1555ECA27EC112300F0744F /* MomentsItems */,
+				C1D8A23027EB1D3500CCCED7 /* DiscoverItemView.swift */,
+				C1D8A23227EB1F3100CCCED7 /* MomentsView.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
 		C1555ECA27EC112300F0744F /* MomentsItems */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,13 +175,11 @@
 		C1D8A22727EB011A00CCCED7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C1555ECA27EC112300F0744F /* MomentsItems */,
+				C12B668227EDABC000EF36F9 /* Discover */,
 				C1D8A22827EB015E00CCCED7 /* ChatsView.swift */,
 				C1D8A22A27EB016B00CCCED7 /* ContactsView.swift */,
 				C1D8A22C27EB017800CCCED7 /* DiscoverView.swift */,
 				C1D8A22E27EB018600CCCED7 /* MyInfoView.swift */,
-				C1D8A23027EB1D3500CCCED7 /* DiscoverItemView.swift */,
-				C1D8A23227EB1F3100CCCED7 /* MomentsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
