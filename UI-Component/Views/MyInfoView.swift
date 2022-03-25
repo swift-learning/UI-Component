@@ -14,7 +14,7 @@ struct MyInfoView: View {
         VStack {
             NavigationView {
                 List {
-                    NavigationLink(destination: Image(user.avatar)) {
+                    NavigationLink(destination: MyAvatarView()) {
                         HStack(alignment: .top) {
                             Image(user.avatar)
                                 .resizable()

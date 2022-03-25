@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C12B668527EDB0FF00EF36F9 /* MyAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12B668427EDB0FF00EF36F9 /* MyAvatarView.swift */; };
 		C1555ECC27EC113C00F0744F /* BackgroundImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1555ECB27EC113C00F0744F /* BackgroundImgView.swift */; };
 		C1555ECE27EC11F300F0744F /* UserNameAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1555ECD27EC11F300F0744F /* UserNameAvatarView.swift */; };
 		C1555ED027EC1EB500F0744F /* MomentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1555ECF27EC1EB500F0744F /* MomentView.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C12B668427EDB0FF00EF36F9 /* MyAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAvatarView.swift; sourceTree = "<group>"; };
 		C1555ECB27EC113C00F0744F /* BackgroundImgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImgView.swift; sourceTree = "<group>"; };
 		C1555ECD27EC11F300F0744F /* UserNameAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameAvatarView.swift; sourceTree = "<group>"; };
 		C1555ECF27EC1EB500F0744F /* MomentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,14 @@
 				C1D8A23227EB1F3100CCCED7 /* MomentsView.swift */,
 			);
 			path = Discover;
+			sourceTree = "<group>";
+		};
+		C12B668327EDB0E600EF36F9 /* MyInfo */ = {
+			isa = PBXGroup;
+			children = (
+				C12B668427EDB0FF00EF36F9 /* MyAvatarView.swift */,
+			);
+			path = MyInfo;
 			sourceTree = "<group>";
 		};
 		C1555ECA27EC112300F0744F /* MomentsItems */ = {
@@ -175,6 +185,7 @@
 		C1D8A22727EB011A00CCCED7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C12B668327EDB0E600EF36F9 /* MyInfo */,
 				C12B668227EDABC000EF36F9 /* Discover */,
 				C1D8A22827EB015E00CCCED7 /* ChatsView.swift */,
 				C1D8A22A27EB016B00CCCED7 /* ContactsView.swift */,
@@ -325,6 +336,7 @@
 				C1D8A1FE27EAF97A00CCCED7 /* UI_ComponentApp.swift in Sources */,
 				C1555ECC27EC113C00F0744F /* BackgroundImgView.swift in Sources */,
 				C1D8A22F27EB018600CCCED7 /* MyInfoView.swift in Sources */,
+				C12B668527EDB0FF00EF36F9 /* MyAvatarView.swift in Sources */,
 				C1555ED627EC45D300F0744F /* UserData.swift in Sources */,
 				C1D8A22B27EB016B00CCCED7 /* ContactsView.swift in Sources */,
 			);

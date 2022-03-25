@@ -10,7 +10,7 @@ import Foundation
 class User: Hashable, ObservableObject {
     
     let name: String
-    var avatar: String
+    @Published var avatar: String
     var backgroundPicName: String?
     
     init(_ name: String, _ avatar: String) {
@@ -23,6 +23,14 @@ class User: Hashable, ObservableObject {
         self.name = name
         self.avatar = avatar
         self.backgroundPicName = back
+    }
+    
+    func changeAvatar() {
+        if (self.avatar == "avatar1") {
+            self.avatar = "avatar4"
+        } else {
+            self.avatar = "avatar1"
+        }
     }
     
     func hash(into hasher: inout Hasher) {
