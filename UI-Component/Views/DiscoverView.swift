@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct DiscoverView: View {
+    let user: User
+    
     var body: some View {
         VStack {
             NavigationView {
                 List {
-                    NavigationLink(destination: MomentsView(user: defaultUser)) {
+                    NavigationLink(destination: MomentsView(user: user, moments: allMoments)) {
                         DiscoverItemView(iconName: "circle.circle.fill", itemName: "朋友圈")
                     }
                     DiscoverItemView(iconName: "gamecontroller.fill", itemName: "游戏")
@@ -28,6 +30,6 @@ struct DiscoverView: View {
 
 struct DiscoverView_Previews: PreviewProvider {
     static var previews: some View {
-        DiscoverView()
+        DiscoverView(user: defaultUser)
     }
 }

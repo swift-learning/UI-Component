@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var user: User
+    
     var body: some View {
         TabView {
             ChatsView()
@@ -20,7 +22,7 @@ struct ContentView: View {
                     Image(systemName: "phone.fill")
                     Text("通讯录")
                 }
-            DiscoverView()
+            DiscoverView(user: user)
                 .tabItem() {
                     Image(systemName: "safari.fill")
                     Text("发现")

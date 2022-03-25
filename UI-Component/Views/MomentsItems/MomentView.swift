@@ -7,24 +7,18 @@
 
 import SwiftUI
 
-struct Moment: Hashable {
-    let name: String
-    let avatar: String
-    var content: String?
-    var pics: [String]?
-    var likes: [String]?
-}
+
 
 struct MomentView: View {
     let moment: Moment;
     
     var body: some View {
         HStack(alignment: .top) {
-            Image(moment.avatar)
+            Image(moment.user.avatar)
                 .resizable()
                 .frame(width: 60, height: 60)
             VStack(alignment: .leading) {
-                Text(moment.name)
+                Text(moment.user.name)
                     .fontWeight(.bold)
                 if (moment.content != nil) {
                     Spacer()
