@@ -16,20 +16,20 @@ class User: Hashable, ObservableObject {
     init(_ name: String, _ avatar: String) {
         self.name = name
         self.avatar = avatar
-        self.backgroundPicName = nil
+        backgroundPicName = nil
     }
     
     init(_ name: String, _ avatar: String, _ back: String) {
         self.name = name
         self.avatar = avatar
-        self.backgroundPicName = back
+        backgroundPicName = back
     }
     
     func changeAvatar() {
-        if (self.avatar == "avatar1") {
-            self.avatar = "avatar4"
+        if (avatar == "avatar1") {
+            avatar = "avatar4"
         } else {
-            self.avatar = "avatar1"
+            avatar = "avatar1"
         }
     }
     
@@ -38,15 +38,35 @@ class User: Hashable, ObservableObject {
     }
     
     static func == (lhs: User, rhs: User) -> Bool {
-        return lhs.name == rhs.name
+        lhs.name == rhs.name
     }
 }
 
-struct Moment: Hashable {
-    let user: User
+class Moment: Hashable, ObservableObject {
+    @Published var user: User
     var content: String?
     var pics: [String]?
     var likes: [String]?
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(content)
+    }
+
+    static func ==(lhs: Moment, rhs: Moment) -> Bool {
+        lhs.user == rhs.user && lhs.content == rhs.content
+    }
+
+    init(user: User, content: String?, pics: [String]?, likes: [String]?) {
+        self.user = user
+        self.content = content
+        self.pics = pics
+        self.likes = likes
+    }
+
+    init(user: User, content: String?) {
+        self.user = user
+        self.content = content
+    }
 }
 
 let peach = User("桃子猪", "avatar1", "pic-background")

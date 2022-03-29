@@ -10,15 +10,16 @@ import SwiftUI
 
 
 struct MomentView: View {
-    let moment: Moment;
-    
+    @ObservedObject var moment: Moment;
+    @ObservedObject var user: User
+
     var body: some View {
         HStack(alignment: .top) {
-            Image(moment.user.avatar)
+            Image(user.avatar)
                 .resizable()
                 .frame(width: 60, height: 60)
             VStack(alignment: .leading) {
-                Text(moment.user.name)
+                Text(user.name)
                     .fontWeight(.bold)
                 if (moment.content != nil) {
                     Spacer()

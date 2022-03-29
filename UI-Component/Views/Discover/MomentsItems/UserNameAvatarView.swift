@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct UserNameAvatarView: View {
-    let name: String
-    let avatar: String
+    @ObservedObject var user: User
     
     var body: some View {
         HStack {
             Spacer()
-            Text(name)
+            Text(user.name)
                 .foregroundColor(.white)
-            Image(avatar)
+            Image(user.avatar)
                 .resizable()
                 .frame(width: 80, height: 80)
         }

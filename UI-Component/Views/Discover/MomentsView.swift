@@ -14,11 +14,11 @@ struct MomentsView: View {
     var body: some View {
         ScrollView() {
             BackgroundImgView(picName: user.backgroundPicName!)
-            UserNameAvatarView(name: user.name, avatar: user.avatar)
+            UserNameAvatarView(user: user)
                 .padding(.trailing)
                 .offset(y: -70)
             ForEach(moments, id: \.self) { moment in
-                MomentView(moment: moment)
+                MomentView(moment: moment, user: moment.user)
             }
         }
         .navigationBarTitle("朋友圈", displayMode: .inline)
